@@ -18,4 +18,5 @@ export const paths = {
 export const config = {
   IS_DEV: process.env.NODE_ENV === "development",
   PORT: process.env.PORT || 5173,
+  TITLE: process.env.TITLE || "React Application",
 };
