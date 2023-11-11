@@ -27,12 +27,22 @@ const module = {
   rules: [fonts, images, javaScript, typeScript, styles],
 };
 
+const resolve = {
+  alias: {
+    "@": paths.src,
+    "@components": paths.components,
+    "@styles": paths.styles,
+  },
+  extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
+};
+
 const plugins = [htmlWebpackPlugin, dotenvWebpackPlugin, esLintWebpackPlugin];
 
 export const WebpackCommonConfig = {
   entry,
   output,
   module,
+  resolve,
   plugins,
   mode: config.IS_DEV ? "development" : "production",
 };

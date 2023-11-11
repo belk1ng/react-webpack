@@ -13,6 +13,8 @@ export const paths = {
   src: path.resolve(root, "src"),
   dist: path.resolve(root, "dist"),
   public: path.resolve(root, "public"),
+  components: path.resolve(root, "src", "components"),
+  styles: path.resolve(root, "src", "assets", "styles"),
 };
 
 export const config = {

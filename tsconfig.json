@@ -4,6 +4,11 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "@components/*": ["./components/*"],
+      "@styles/*": ["./assets/styles/*"]
+    },
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "lib": ["ES2016", "DOM", "DOM.Iterable"],
