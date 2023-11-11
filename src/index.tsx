@@ -1,4 +1,5 @@
 import "@styles/style.scss";
+import "normalize.css";
 import { createRoot } from "react-dom/client";
 import Counter from "@components/Counter";
 
